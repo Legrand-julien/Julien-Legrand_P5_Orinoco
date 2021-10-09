@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/product.css">
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Page produit</title>
+</head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="nav">
+                    <a href="index.html">
+                        <h1 class="logo">Orinoco-Peluches</h1>
+                    </a>
+                    <div class="shopping-cart">
+                        <a href="cart.html">
+                            <span i class="fas fa-shopping-bag"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card-product">
+                    <div class="card-product-img">
+                        <img class="img" src="" alt="">
+                    </div>
+                    <div class="infos-product">
+                        <div class="infos-title"></div>
+                        <div class="infos-description"></div>
+                        <div class="infos-price"></div>
+                        <div class="infos-quantity">
+                            <label for="teddies-number">
+                                Quantité :
+                            </label>
+                            <input id="teddies-number" name="teddies-number" type="number" value="1" min="1"> 
+                        </div>
+                        <div class="infos-colors">
+                            <label for="color-select">
+                                Couleur : 
+                            </label>
+                            <select name="color" id="color-select">
+                                <option value="">Choisissez votre couleur</option>
+                            </select>
+                        </div>
+                        <div class="confirmation-to-add">
+                            <p class="text-confirm"></p>
+                        </div>
+                        <div class="choose-button">
+                            <div class="back-to-home">
+                                <a href="index.html">
+                                    <button class="btn-grad">
+                                        <span>Retour aux produits</span>
+                                    </button>
+                                </a>
+                            </div> 
+                            <div class="added-to-cart">
+                                <a href="#">
+                                    <button class="btn-grad" type="submit">
+                                        <span>Ajouter au panier</span>
+                                    </button>
+                                </a>  
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="down-footer">
+            <div>
+                <h2>Suivez-nous sur vos réseaux sociaux préféré !!</h2>
+            </div>
+            <div class="social-container">
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" title="lien vers facebook.com">
+                        <img src="./img/facebook.webp" alt="Logo facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="lien vers instagram.com">
+                        <img src="./img/instagram.webp" alt="Logo instagram">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" title="liens vers twitter.com">
+                        <img src="./img/twitter.webp" alt="Logo twitter">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="./Javascript/product.js" defer></script>
+    </body>
+</html>
