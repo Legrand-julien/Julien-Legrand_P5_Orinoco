@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/cart.css">
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Mon panier</title>
+</head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="nav">
+                    <a href="index.html">
+                        <h1 class="logo">Orinoco-Peluches</h1>
+                    </a>
+                    <div class="shopping-cart">
+                        <a href="cart.html">
+                        <span i class="fas fa-shopping-bag"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card-cart">
+                    <h2>Votre panier</h2>
+                    <div class="card-recap">
+                        <div class="card-recap-row-info">
+                            <div class="info-product">Produit</div>
+                            <div class="info-product">Nom</div>
+                            <div class="info-product">Quantité</div>
+                            <div class="info-product price">Prix</div>
+                        </div>
+                        <div class="info-cart">
+                            <div class="if-empty-cart">
+                                <h2>Votre panier ne contient aucun article.</h2>
+                            </div>
+                            <h2 class="total"></h2>
+                            <a href="cart.html">
+                                <div class="button-to-empty-cart">
+                                    <span>Vider le panier</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="form-infos">
+                    <h3>Remplissez le formulaire pour validé votre commande</h3>
+                    <form>
+                        <label for="name">Prénom :</label>
+                        <input type="text" placeholder="Prénom" id="name" name="user-name" required>
+                        
+                        <label for="lastname">Nom :</label>
+                        <input type="text" placeholder="Nom" id="lastname" name="user-lastname" required>
+                
+                        <label for="address">Adresse :</label>
+                        <input type="text" placeholder="Adresse de livraison" id="address" name="user-adress" required>
+                
+                        <label for="city">Ville :</label>
+                        <input type="text" placeholder="Ville" id="city" name="user-city" required>
+                
+                        <label for="postal-code">Code postal :</label>
+                        <input type="text" placeholder="Code postal" id="postal-code" name="user-postal-code" required> 
+                
+                        <label for="email">e-mail :</label>
+                        <input type="email" placeholder="Adresse e-mail" id="email" name="user-email" required>
+                    
+                        <label for="phone">Numéro de téléphone :</label>
+                        <input type="tel" placeholder="Numéro de téléphone" id="phone" name="user-phone" required>
+                        
+                        <div class="error-message"></div>
+                
+                        <div class="payment">
+                            <div id="submit" class="button-to-pay">
+                                <span>Commander</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="down-footer">
+            <div>
+                <h2>Suivez-nous sur vos réseaux sociaux préféré !!</h2>
+            </div>
+            <div class="social-container">
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" title="lien vers facebook.com">
+                        <img src="../img/facebook.webp" alt="Logo facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="lien vers instagram.com">
+                        <img src="../img/instagram.webp" alt="Logo instagram">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" title="liens vers twitter.com">
+                        <img src="../img/twitter.webp" alt="Logo twitter">
+                    </a>
+                </div>
+            </div>
+        </footer>     
+    </body>
+        <script src="../JS/cart.js" defer></script>
+</html>
