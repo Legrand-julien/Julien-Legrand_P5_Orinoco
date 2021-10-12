@@ -119,6 +119,10 @@ body{
     margin: 20px;
 }
 
+.button-to-empty-cart:hover{
+    box-shadow: 1px 1px 1px 2px bisque;
+}
+
 .button-to-empty-cart span {
     font-weight: bold;
 } 
@@ -154,7 +158,6 @@ label {
 }
 
 .error-message{
-
     text-align: center;
     width: 98%; 
     color: white;
@@ -163,22 +166,39 @@ label {
 }
 
 .button-to-pay {
-    width: 200px;
     height: 50px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
     color: black;
     font-size: 20px;
-    border-radius: 10px;
     cursor: pointer;
 }
 
 .button-to-pay span {
     font-weight: bold;
 }
+
+.btn-grad {
+    background-image: linear-gradient(to right, burlywood 50%, #643d36 100%, #ffffff 1%)
+}
+
+.btn-grad {
+    width: 230px;
+    transition: 0.5s;
+    background-size: 200% auto;
+                
+    box-shadow: 0 0 5px #eee;
+    border-radius: 15px;
+}
+
+.btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
 
 footer{
     width: 100%;
