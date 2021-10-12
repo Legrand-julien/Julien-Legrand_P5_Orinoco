@@ -211,16 +211,16 @@ function checkForm() {
                 .then((data) => {
                     localStorage.clear(); // Ici on vide entièrement le LS 
                     localStorage.setItem("orderId", data.orderId); // Ici on ajoute au LS seulement le numéros de commande (orderId) qui nous a été fournis
-                    localStorage.setItem("total", priceToConfirmation[1]); // Ici on ajoute au LS le Prix Total des produits pour pouvoir les insérer au bon endroit dans la page confirmation 
+                    localStorage.setItem("total", priceToConfirmation[1]); // Ici on ajoute au LS le Prix Total des produits pour pouvoir les insérer au bon endroit dans la page de confirmation 
                     console.log("data"); 
                     console.log(data);
 
                 // Chargement de la page confirmation.html dés que l'on clique sur le bouton "Commander" 
                 document.location.href = "confirmation.html";    
 
-                })
+            })
         }    
         
-    })
+    });
 
-}
+};
