@@ -145,3 +145,33 @@ footer{
     font-size: 22px;
     color: black;
 }
+
+/********************** Média queries *****************/
+
+@media all and (min-width: 320px) and (max-width: 780px) {
+   
+    .card-product {
+        width: 90%;
+        height: auto;
+    }
+   
+    .card-product-img  {
+        width: 100%;
+    }
+
+    .card-product-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .choose-button {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 100%;
+    }
+}
