@@ -216,11 +216,9 @@ function checkForm() {
                     console.log(data);
 
                 // Chargement de la page confirmation.html dés que l'on clique sur le bouton "Commander" 
-                document.location.href = "confirmation.html";    
-
+                document.location.href = "confirmation.html";
+                
             })
-        }    
-        
+        }            
     });
-
 };
