@@ -180,23 +180,17 @@ label {
     font-weight: bold;
 }
 
-.down-footer{
+footer{
     width: 100%;
-    text-align: center;
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: burlywood;
 }
 
-.social-container{
-    display: flex;
-    justify-content: center;
-}
-
-.social{
-    width: 100%;
-}
-
-.social img{
-    width: 50px;
-    height: 50px;
-    margin-right: 30px;
+.footer-link a {
+    font-size: 22px;
+    color: black;
 }
