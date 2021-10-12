@@ -92,36 +92,37 @@ body{
 
 #products-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-product{
+    width: 50%;
     display: flex;
     justify-content: center;
 }
 
 .img-product{
-    width: 600px;
-    height: 200px;
+    width: 100%;
     margin-top: 30px;
-    display: flex;
     background-color: burlywood;
     border-radius: 25px;
     box-shadow: 1px 3px 3px 3px bisque ;
 }
 
 .img-product img{
-    height: 200px;
-    width: 250px;
+    height: 350px;
+    width: 500px;
     object-fit: cover;
-    border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .product-infos{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -149,4 +150,31 @@ footer{
 .footer-link a {
     font-size: 22px;
     color: black;
+}
+
+
+/********************** Média queries *****************/
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+    .bg-text{
+        position: absolute;
+        top: 150px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+    .card-product {
+        width: 95%;
+    }
+    .link {
+        width: 100%;
+    }
+    .img-product img {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 100px;
+    }
 }
