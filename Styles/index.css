@@ -160,15 +160,15 @@ footer{
         position: absolute;
         top: 150px;
     }
-}
 
-@media all and (min-width: 320px) and (max-width: 600px) {
     .card-product {
         width: 95%;
     }
+
     .link {
         width: 100%;
     }
+    
     .img-product img {
         width: 100%;
     }
