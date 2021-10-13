@@ -146,10 +146,11 @@ form {
     flex-direction: column;
     align-items: center;
     line-height: 2;
+    width: 60%;
 }
 
 input {
-    width: 40vw;
+    width: 98%;
 }
 
 label {
@@ -214,3 +215,47 @@ footer{
     font-size: 22px;
     color: black;
 }
+
+
+/********************** Média queries *****************/
+
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+    .product-list .info-product img {
+        width: 50px;
+        height: 50px;
+    } 
+    .product-list .info-product {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+    .product-list .info-product img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+    .info-cart .total {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    #form-infos h3 {
+        width: 95%;
+        padding: 5px;
+        font-size: 24px;
+    }   
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+    footer {
+        flex-direction: column;
+        height: 100px;
+    }
+}
+
