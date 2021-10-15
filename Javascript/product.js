@@ -38,23 +38,21 @@ function if404() {
     true); 
 }
 
-// Fonction qui affichera un message d'erreur si il y a un problême dans l'URL du produits
+// Fonction qui affichera un message d'erreur si le serveur localhost:3000 n'est pas lancé
 function displayErrorMessageFromApi() {
 
     let product = document.querySelector('.container');
-                product.innerHTML = `Désolé nous n'avons pas réussi à afficher nos produit.`;
+                product.innerHTML = `Désolé nous n'avons pas réussi à afficher nos produits.`;
                 product.style.textAlign = 'center';
-                product.style.fontWeight = 'bold';
                 product.style.backgroundColor = 'burlywood';
+                product.style.height = "150px";
 };
-
-
 
 
 // on récupère un produit de la page d'acceuil pour que celui-ci s'affiche dans la page produit via la requête
 function getArticles() {
     
-    fetch(`http://localhost:3000/api/teddies/${id}`) // URL des produits en récupçrant leurs ID respectifs
+    fetch(`http://localhost:3000/api/teddies/${id}`) // URL des produits en récupérant leurs ID respectifs
         .then(function (response) {
             return response.json();
         })

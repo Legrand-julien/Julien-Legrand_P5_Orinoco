@@ -1,7 +1,10 @@
+
+
+
 main();
 
 function main() {
-    getArticles()
+    getArticles();
 };
 
 // Récuperation des produits depuis l'API localhost:3000

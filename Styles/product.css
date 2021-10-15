@@ -36,7 +36,9 @@ body{
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px 0;
+    font-size: 30px;
 }
 
 .card-product{
