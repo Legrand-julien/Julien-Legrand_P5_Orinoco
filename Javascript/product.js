@@ -15,27 +15,8 @@ main();
 
 function main() {
  
-    if404(); // Fonction qui n'affichera rien si il y a une erreur dans l' URL de la page
     getArticles(); // Fonction de récupération du produit avec la requete searchParams 
     addToCart(); // Fonction qui permettra d'ajouter le/les produits desirers   
-}
-
-function if404() {
-    window.addEventListener('error', (e) => {
-        let container = document.querySelector('.container');
-        container.innerHTML = `<p>Erreur lors du chargement, cette page n'existe pas.<br>
-            <a class="back-to-home" href="index.html">Retour à la boutique</a>
-        </p>`;
-        container.style.color = 'white';
-        container.style.fontSize = '32px';
-
-        let linkBackToHome = document.querySelector('.back-to-home'); // Lien qui permet un retour à la page d'accueil
-        linkBackToHome.style.color = 'white';
-        linkBackToHome.style.display = 'flex';
-        linkBackToHome.style.justifyContent = 'center';
-        linkBackToHome.style.textDecoration = 'underline';
-    },
-    true); 
 }
 
 // Fonction qui affichera un message d'erreur si le serveur localhost:3000 n'est pas lancé
